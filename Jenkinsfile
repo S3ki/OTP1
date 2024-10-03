@@ -3,9 +3,9 @@ pipeline {
 
     environment {
         // Define Docker Hub credentials ID
-        DOCKERHUB_CREDENTIALS_ID = 'amirdirin'
+        DOCKERHUB_CREDENTIALS_ID = 'S3ki'
         // Define Docker Hub repository name
-        DOCKERHUB_REPO = 'amirdirin/fartocelkelvin'
+        DOCKERHUB_REPO = 'S3ki/fartocelkelvin'
         // Define Docker image tag
         DOCKER_IMAGE_TAG = 'latest'
     }
@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from Git repository
-                git 'https://github.com/ADirin/FarToCel_Fall2024.git'
+                git 'https://github.com/S3ki/OTP1.git'
             }
         }
         stage('Build Docker Image') {
