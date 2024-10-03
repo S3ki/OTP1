@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from Git repository
-                git 'https://github.com/S3ki/OTP1.git'
+                git branch: 'main', url: 'https://github.com/S3ki/OTP1.git'
             }
         }
         stage('Build Docker Image') {
