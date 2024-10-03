@@ -30,4 +30,8 @@ public class TemperatureConverter {
     public boolean isExtremeTemperature(double celsius) {
         return celsius < -40 || celsius > 50;
     }
+
+    public static double kelvinToFah(double kel) {
+        return Math.round((kel-273.15)* (9/5) + 32);
+    }
 }
